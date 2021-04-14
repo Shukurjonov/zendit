@@ -8,37 +8,37 @@
 
 
 /*------------------------------------*\
-  #FONT-FACE
+#FONT-FACE
 \*------------------------------------*/
 
 
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 200;
-    src: url('../fonts/poppins-v15-latin-200.woff2') format('woff2'),
-         url('../fonts/poppins-v15-latin-200.woff') format('woff');
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/poppins-v15-latin-200.woff2') format('woff2'),
+  url('../fonts/poppins-v15-latin-200.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'),
-         url('../fonts/poppins-v15-latin-regular.woff') format('woff');
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'),
+  url('../fonts/poppins-v15-latin-regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/poppins-v15-latin-700.woff2') format('woff2'),
-         url('../fonts/poppins-v15-latin-700.woff') format('woff');
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v15-latin-700.woff2') format('woff2'),
+  url('../fonts/poppins-v15-latin-700.woff') format('woff');
 }
 
 
 /*------------------------------------*\
-  #BOX-SIZING
+#BOX-SIZING
 \*------------------------------------*/
 
 html {
@@ -54,7 +54,7 @@ html {
 
 
 /*------------------------------------*\
-  #GLOBAL-STYLES
+#GLOBAL-STYLES
 \*------------------------------------*/
 
 html {
@@ -97,8 +97,8 @@ img {
 }
 
 *:focus {
-    outline: none;
-    box-shadow: 0 0 5px 1px rgba(40, 182, 75, 0.5);
+  outline: none;
+  box-shadow: 0 0 5px 1px rgba(40, 182, 75, 0.5);
 }
 
 /* CONTAINER */
@@ -113,9 +113,8 @@ img {
 
 
 .page-header{
-    background-color: #F6F8FF;
-    color: #172F53;
-    
+  background-color: #F6F8FF;
+  color: #172F53;
 }
 
 .page-box{
@@ -125,9 +124,8 @@ img {
   background-position: right center;
 }
 .header-top {
-    display: flex;
-    align-items: center;
-
+  display: flex;
+  align-items: center;
 }
 
 .logo{
@@ -148,9 +146,9 @@ img {
 }
 
 .logo__text {
-    vertical-align: middle;
-    font-size: 32px;
-    font-weight: bold;
+  vertical-align: middle;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .sitenav {
@@ -258,7 +256,6 @@ img {
   color: #111517;
 }
 
-
 .element-sign:active {
   font-weight: bold;
   color: #21D8E3;
@@ -284,7 +281,7 @@ img {
 
 .header-middle {
   margin-top: 180px;
-  width: 684px;
+  max-width: 684px;
 }
 
 .middle__heading {
@@ -305,7 +302,7 @@ img {
   max-width: 1489;
   margin-top: -100px ;
   margin-right: 100px;
-  margin-bottom: 170px;
+  margin-bottom: 140px;
   padding: 40px 70px 70px;
   font-size: 25px;
   background-color: #fff;
@@ -330,6 +327,7 @@ img {
   padding-bottom: 31px;
   padding-left: 40px;
   margin-right: 95px;
+  margin-bottom: 30px;
   border-radius: 10px;
   border: none;
   background-color: #EFEFEF;
@@ -344,15 +342,15 @@ img {
   font-weight: bold;
   border: none;
   transition: background 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95),
-              color 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+  color 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
-.track__button:hover {
+.use__button:hover {
   background-color: #172F53;
   color: #21D8E3;
 }
 
-.track__button:active {
+.use__button:active {
   background-color: #111517;
   color: #fff;
 }
@@ -362,7 +360,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 170px;
+  margin-bottom: 140px;
   color: #172F53;
 }
 
@@ -387,21 +385,22 @@ img {
 .special__tariff {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
 .tariff-item {
   width: 350px;
   padding: 30px 30px 75px;
+  margin-bottom: 30px;
   background-color: #F6F8FF;
   color: #172F53;
   border-radius: 20px;
   border: none;
   transition: background 0.3s cubic-bezier(0.77, 0, 0.175, 1),
-              color 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  color 0.3s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .tariff-item:not(:last-child){
